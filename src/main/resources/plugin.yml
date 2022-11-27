@@ -1,0 +1,26 @@
+name: sethome
+description: Another /sethome plugin
+author: oklookat
+website: https://github.com/oklookat/sethome
+main: dev.oklookat.sethome.Main
+
+version: 1.0.0
+api-version: 1.19
+load: STARTUP
+
+libraries:
+  - org.xerial:sqlite-jdbc:3.40.0.0
+
+commands:
+  sethome:
+    description: "Set home"
+    usage: "/sethome [name]"
+    aliases: [sethome]
+  delhome:
+    description: "Delete home"
+    usage: "/delhome [name]"
+    aliases: [delhome]
+  home:
+    description: "Teleport to home"
+    usage: "/home [name]"
+    aliases: [home]

@@ -1,0 +1,29 @@
+plugins {
+    id 'java'
+    // https://github.com/jpenilla/run-task
+    id("xyz.jpenilla.run-paper") version "2.0.0"
+}
+
+repositories {
+    mavenCentral()
+    maven {
+        url "https://repo.papermc.io/repository/maven-public/"
+    }
+}
+
+dependencies {
+    compileOnly("io.papermc.paper:paper-api:1.19.2-R0.1-SNAPSHOT")
+}
+
+java {
+    toolchain {
+        languageVersion = JavaLanguageVersion.of(17)
+    }
+}
+
+tasks {
+  runServer {
+    // https://github.com/jpenilla/run-task
+    minecraftVersion("1.19.2")
+  }
+}
