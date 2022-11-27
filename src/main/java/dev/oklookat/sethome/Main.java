@@ -13,7 +13,7 @@ import dev.oklookat.sethome.cmd.SetHome;
 import dev.oklookat.sethome.model.Database;
 
 public class Main extends JavaPlugin {
-    // TODO: add delhome
+    // TODO: add validators, config file with regex, messages, homes list, permissions
     public static Main self;
 
     private SetHome set;
