@@ -16,7 +16,6 @@ public class Utils {
         if(homeName.length() > 8) {
             return false;
         }
-
         return true;
     }
 }
